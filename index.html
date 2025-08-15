@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Neamul Haque Khan — Software Engineer</title>
+  <meta name="description" content="Portfolio of Neamul Haque Khan, Software Engineer — .NET, Angular, SQL, REST APIs." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="./assets/js/variables.js"></script>
+  <script src="./assets/js/main.js"></script>
+
+</head>
+<body>
+  <header id="top">
+    <div class="container">
+      <nav aria-label="Primary">
+        <a class="brand" href="#top" aria-label="Home">
+          <span class="dot" aria-hidden="true"></span>
+          <span>Neamul Haque Khan</span>
+        </a>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#certs">Certificates</a>
+          <a href="#contact">Contact</a>
+          <a class="btn" id="downloadCV" href="./assets/cv/Neamul-Haque-Khan-CV.pdf" download="Neamul_Haque_Khan_CV.pdf" aria-label="Download CV">⬇️ Download CV</a>
+          <a class="btn" href="./assets/cv/Neamul-Haque-Khan-CV.pdf" target="_blank" rel="noopener" aria-label="View CV in a new tab">👁️ View CV</a>
+          
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="kicker"><span class="line"></span> Software Engineer</div>
+          <h1>Hello, I’m Neamul — I build clean, reliable web apps.</h1>
+          <p class="lede">Objective: Looking to obtain the position of Software Developer in a fast-paced tech environment to utilize my skills and experience building customized software for diverse client needs.</p>
+          <div class="chips" aria-label="Highlights">
+            <span class="chip">ASP.NET / ASP.NET Core</span>
+            <span class="chip">MS SQL Server</span>
+            <span class="chip">Entity Framework</span>
+            <span class="chip">JavaScript • Angular • jQuery</span>
+            <span class="chip">RESTful Web APIs</span>
+            <span class="chip">SOLID • DI • Repository • Layered Architecture</span>
+          </div>
+          <div class="actions" style="display:flex;gap:12px;flex-wrap:wrap;margin-top:10px">
+            <a class="btn" href="#projects">View Projects ↘</a>
+            <a class="btn" href="./assets/cv/Neamul-Haque-Khan-CV.pdf" download="Neamul_Haque_Khan_CV.pdf">⬇️ Download CV</a>
+            <a class="btn" href="https://www.linkedin.com/in/neamulbd95/" target="_blank" rel="noopener">in LinkedIn</a>
+            <button class="btn" id="copyEmail">Copy Email</button>
+          </div>
+        </div>
+        <div class="card" role="img" aria-label="Profile card">
+          <h3 style="margin:0 0 8px 0">Quick facts</h3>
+          <ul class="muted" style="margin:0;padding-left:18px;line-height:1.9">
+            <li>Based in Badda, Dhaka, Bangladesh</li>
+            <li>Phone: 01521109325</li>
+            <li>Email: <a href="mailto:neamulhaque.naem@gmail.com">neamulhaque.naem@gmail.com</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/neamulbd95/" target="_blank" rel="noopener">/in/neamulbd95</a></li>
+          </ul>
+          <div class="badges">
+            <span class="badge">Agile mindset</span>
+            <span class="badge">Database design</span>
+            <span class="badge">Development</span>
+            <span class="badge">Deployment & maintenance</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2>About</h2>
+        <p class="muted">Software Engineer experienced across .NET (ASP.NET MVC/Core, Entity Framework), JavaScript, Angular, jQuery and RESTful API development. Comfortable designing relational databases, writing stored procedures & triggers, and delivering production deployments. I enjoy clean, maintainable architectures and applying SOLID, Repository, Layered patterns with Dependency Injection.</p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="grid" role="list">
+          <div class="card" role="listitem">
+            <h3>Technology</h3>
+            <p class="muted">ASP.NET MVC, ASP.NET Core, Entity Framework, MS SQL Server, JavaScript, Angular, jQuery, Java Spring boot, Python, RESTful Web API, Node.js.</p>
+          </div>
+          <div class="card" role="listitem">
+            <h3>Patterns & Architecture</h3>
+            <p class="muted">SOLID principles, Repository pattern, Layered Architecture, Dependency Injection, Microservices.</p>
+          </div>
+          <div class="card" role="listitem">
+            <h3>Tools & Ops</h3>
+            <p class="muted">IIS deployment, Azure DevOps, Docker, Maintenance; Reporting with Apache Superset, Data migrations,.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap">
+          <h2>Projects</h2>
+          <div style="display:flex;gap:10px;align-items:center">
+            <input id="search" type="search" placeholder="Search projects…" aria-label="Search projects" style="padding:10px 12px;border-radius:12px;border:1px solid var(--border);background:var(--card);color:var(--text)">
+            <select id="filter" class="btn" aria-label="Filter projects">
+              <option value="all">All</option>
+              <option value="frontend">Front-end</option>
+              <option value="backend">Back-end</option>
+              <option value="fullstack">Full-stack</option>
+            </select>
+          </div>
+        </div>
+        <div id="projectGrid" class="grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+        <h2>Experience</h2>
+        <div class="timeline" id="timeline"></div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="container">
+        <h2>Education</h2>
+        <div class="timeline">
+          
+        </div>
+      </div>
+    </section>
+
+
+    <section id="certs">
+      <div class="container">
+        <h2>Certificates</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>C# Advanced Topics: Prepare for Technical Interviews</h3>
+            <p class="muted"><a href="https://www.udemy.com/certificate/UC-631ae4dd-fa74-4778-a5b9-a75bd1d27940/" target="_blank" rel="noopener">View certificate ↗</a></p>
+          </article>
+          <article class="card">
+            <h3>Angular – The Complete Guide (2023 Edition)</h3>
+            <p class="muted"><a href="https://www.udemy.com/certificate/UC-26d36285-a914-4869-aa80-ffd03627c36e/" target="_blank" rel="noopener">View certificate ↗</a></p>
+          </article>
+          <article class="card">
+            <h3>Python for Data Science and AI (Coursera)</h3>
+            <p class="muted"><a href="https://www.coursera.org/account/accomplishments/certificate/BNCDUZJ6T7F5" target="_blank" rel="noopener">View certificate ↗</a></p>
+          </article>
+          <article class="card">
+            <h3>What is Data Science? (Coursera)</h3>
+            <p class="muted"><a href="https://www.coursera.org/account/accomplishments/certificate/5WVM9ZFV7TEK" target="_blank" rel="noopener">View certificate ↗</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <div class="card">
+          <p class="muted">I’m happy to chat about opportunities or collaborations. Use the form or reach me directly.</p>
+          <form id="contactForm" action="https://formspree.io/f/xpwlnoyo"  accept-charset="UTF-8" novalidate
+                  style="display:grid;gap:12px;max-width:640px" aria-label="Contact form">
+            <div style="display:grid;gap:8px">
+              <label for="name">Your name</label>
+              <input id="name" name="name" required placeholder="Jane Doe" style="padding:12px;border-radius:12px;border:1px solid var(--border);background:var(--bg-alt);color:var(--text)">
+            </div>
+            <div style="display:grid;gap:8px">
+              <label for="email">Your email</label>
+              <input id="email" name="email" type="email" required placeholder="jane@example.com" style="padding:12px;border-radius:12px;border:1px solid var(--border);background:var(--bg-alt);color:var(--text)">
+            </div>
+            <div style="display:grid;gap:8px">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Hello Neamul…" style="padding:12px;border-radius:12px;border:1px solid var(--border);background:var(--bg-alt);color:var(--text)"></textarea>
+            </div>
+            <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+              <button type="submit" class="btn">Send email</button>
+              <a id="mailtoLink" class="muted" href="#">Or email me directly</a>
+              <p id="formStatus" class="muted" role="status" aria-live="polite" style="margin-top:8px"></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px">
+      <span>© <span id="year"></span> Neamul Haque Khan</span>
+      <a id="backToTop" class="muted">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
