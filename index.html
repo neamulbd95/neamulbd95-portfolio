@@ -14,17 +14,19 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="./assets/js/variables.js"></script>
   <script src="./assets/js/main.js"></script>
-
 </head>
 <body>
   <header id="top">
     <div class="container">
-      <nav aria-label="Primary">
+      <!-- Top row: brand, desktop links, hamburger -->
+      <nav class="nav" aria-label="Primary">
         <a class="brand" href="#top" aria-label="Home">
           <span class="dot" aria-hidden="true"></span>
           <span>Neamul Haque Khan</span>
         </a>
-        <div class="nav-links">
+
+        <!-- Desktop navigation -->
+        <div class="nav-links desktop">
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
@@ -34,8 +36,27 @@
           <a href="#contact">Contact</a>
           <a class="btn" id="downloadCV" href="./assets/cv/Neamul-Haque-Khan-CV.pdf" download="Neamul_Haque_Khan_CV.pdf" aria-label="Download CV">⬇️ Download CV</a>
           <a class="btn" href="./assets/cv/Neamul-Haque-Khan-CV.pdf" target="_blank" rel="noopener" aria-label="View CV in a new tab">👁️ View CV</a>
-          
         </div>
+
+        <!-- Mobile hamburger -->
+        <button class="hamburger" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="bars"><span class="bar"></span></span>
+        </button>
+      </nav>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="container">
+      <nav class="nav-links mobile" id="mobile-menu" aria-label="Mobile navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#certs">Certificates</a>
+        <a href="#contact">Contact</a>
+        <a class="btn" href="./assets/cv/Neamul-Haque-Khan-CV.pdf" download="Neamul_Haque_Khan_CV.pdf">⬇️ Download CV</a>
+        <a class="btn" href="./assets/cv/Neamul-Haque-Khan-CV.pdf" target="_blank" rel="noopener">👁️ View CV</a>
       </nav>
     </div>
   </header>
@@ -141,7 +162,6 @@
       </div>
     </section>
 
-
     <section id="certs">
       <div class="container">
         <h2>Certificates</h2>
@@ -188,7 +208,7 @@
             <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
               <button type="submit" class="btn">Send email</button>
               <a id="mailtoLink" class="muted" href="#">Or email me directly</a>
-              <p id="formStatus" class="muted" role="status" aria-live="polite" style="margin-top:8px"></p>
+              <p id="formStatus" class="muted" role="status" aria-live="polite" style="margin-top: 15px;color: green;"></p>
             </div>
           </form>
         </div>
